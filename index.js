@@ -28,4 +28,33 @@ function textify(){
 }
 
 
+    let numbers = [3, 4, 6 , 10, 18, 20, 30, 40];
+
+
+    let minimumNumber = 10;
+
+    function findHighestDigit() {
+        var highestNumber = numbers.filter((number) => number > minimumNumber);
+        console.log('This are the Highest numbers' + highestNumber);
+
+        var lowestNumber = numbers.filter((number) => number < minimumNumber);
+        console.log('These are the lowest number' + lowestNumber);
+    }
+
+
+    function totalOfArrays(){
+        let total = 0;
+        for (let index = 0; index < numbers.length; index++) {
+                total += numbers[index];          
+        }
+        console.log(total);
+    }
+    
+    totalOfArrays()
+    findHighestDigit()
+
+
+
+
+
 
